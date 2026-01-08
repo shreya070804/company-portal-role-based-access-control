@@ -1,0 +1,4431 @@
+/* ===== MODERN LOGIN UI ===== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #f4f6f8 0%,
+    #eef2f7 100%
+  );
+}
+
+
+.container.dark .login-page {
+  background: linear-gradient(135deg, #0f1115, #1c2333);
+}
+
+.login-card.modern {
+  width: 360px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.container.dark .login-card.modern {
+  background: #171a21;
+  border: 1px solid #242833;
+}
+
+.login-accent {
+  padding: 24px;
+  background: linear-gradient(135deg, #1a73e8, #4d9cff);
+  color: white;
+  text-align: center;
+}
+
+.container.dark .login-accent {
+  background: linear-gradient(135deg, #1f3b73, #305aa3);
+}
+
+.login-accent h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.login-accent p {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+}
+
+.divider-text {
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+  margin: 10px 0;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 16px;
+}
+
+.role-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-card span {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.role-card:hover {
+  background: #f1f5ff;
+  border-color: #1a73e8;
+}
+
+.container.dark .role-card {
+  border-color: #333;
+}
+
+.container.dark .role-card:hover {
+  background: #1f2937;
+}
+
+/* ===== EMPLOYEE DASHBOARD ===== */
+
+.employee-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.overview-card {
+  background: #f7f9fc;
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container.dark .overview-card {
+  background: #1a1e27;
+}
+
+.overview-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+.container.dark .overview-label {
+  color: #aaa;
+}
+
+.overview-value {
+  display: block;
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ===== EMPLOYEE DASHBOARD ===== */
+
+.employee-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.overview-card {
+  background: #f7f9fc;
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container.dark .overview-card {
+  background: #1a1e27;
+}
+
+.overview-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.container.dark .overview-label {
+  color: #aaa;
+}
+
+.overview-value {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.employee-table td:first-child {
+  font-weight: 500;
+}
+
+.employee-table select {
+  min-width: 120px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px 0;
+  color: #777;
+}
+
+/* ===== DASHBOARD LAYOUT ===== */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.dashboard-header p {
+  margin-top: 4px;
+  color: #666;
+}
+
+/* ===== OVERVIEW ===== */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.overview-box {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.overview-box span {
+  font-size: 13px;
+  color: #777;
+}
+
+.overview-box strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 26px;
+}
+
+.container.dark .overview-box {
+  background: #171a21;
+  border: 1px solid #242833;
+  box-shadow: none;
+}
+
+/* ===== SEARCH ===== */
+
+.search-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* ===== TABLE ===== */
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th {
+  background: #f5f7fb;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-title {
+  font-weight: 500;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* ===== STATUS ===== */
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #f1f3f4;
+}
+
+.status.in-progress {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.status.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* ===== PRIORITY ===== */
+
+.priority {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.priority.high {
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+.priority.medium {
+  background: #fff4e5;
+  color: #e65100;
+}
+
+.priority.low {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* ===== EMPLOYEE DASHBOARD (ALT STYLE) ===== */
+
+.emp-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header */
+.emp-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.emp-header p {
+  margin-top: 4px;
+  color: #666;
+}
+
+/* Status strip (different from cards) */
+.emp-status-strip {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f4f9;
+  padding: 14px 20px;
+  border-radius: 12px;
+}
+
+.emp-status-strip div {
+  text-align: center;
+}
+
+.emp-status-strip span {
+  font-size: 12px;
+  color: #666;
+}
+
+.emp-status-strip strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+}
+
+/* Panels */
+.emp-panel {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* Filters */
+.emp-filter {
+  display: flex;
+  gap: 12px;
+}
+
+/* Table */
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.emp-table th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+.emp-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.emp-task {
+  font-weight: 500;
+}
+
+/* Status */
+.emp-status {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.emp-status.pending {
+  background: #f1f3f4;
+}
+
+.emp-status.inprogress {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.emp-status.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* Priority */
+.emp-priority {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.emp-priority.high {
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+.emp-priority.medium {
+  background: #fff4e5;
+  color: #e65100;
+}
+
+.emp-priority.low {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* Empty */
+.emp-empty {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+/* Dark mode */
+.container.dark .emp-panel {
+  background: #171a21;
+  border: 1px solid #242833;
+}
+
+.container.dark .emp-status-strip {
+  background: #1c2029;
+}
+
+.container.dark .emp-header p {
+  color: #aaa;
+}
+
+/* ===== MANAGER DASHBOARD (ALT STYLE) ===== */
+
+.manager-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Header */
+.manager-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.manager-header p {
+  margin-top: 4px;
+  color: #666;
+}
+
+/* Progress Panel */
+.manager-progress-panel {
+  background: #f1f4f9;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.progress-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 50px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.progress-percent {
+  font-size: 12px;
+  text-align: right;
+}
+
+/* Panels */
+.manager-panel {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* Form */
+.manager-form {
+  display: grid;
+  grid-template-columns: 1fr 160px 120px auto;
+  gap: 12px;
+}
+
+/* Table */
+.manager-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.manager-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.manager-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Status */
+.mgr-status {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.mgr-status.pending {
+  background: #f1f3f4;
+}
+
+.mgr-status.inprogress {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.mgr-status.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* Priority */
+.mgr-priority {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.mgr-priority.high {
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+.mgr-priority.medium {
+  background: #fff4e5;
+  color: #e65100;
+}
+
+.mgr-priority.low {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+/* Dark mode */
+.container.dark .manager-panel,
+.container.dark .manager-progress-panel {
+  background: #171a21;
+  border: 1px solid #242833;
+}
+
+.container.dark .manager-header p {
+  color: #aaa;
+}
+
+/* ===== ADMIN DASHBOARD (ALT STYLE) ===== */
+
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Header */
+.admin-header h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.admin-header p {
+  margin-top: 4px;
+  color: #666;
+}
+
+/* Metrics */
+.admin-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.admin-metric {
+  background: linear-gradient(135deg, #f5f7fb, #eef1f7);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.admin-metric span {
+  font-size: 13px;
+  color: #666;
+}
+
+.admin-metric strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 26px;
+}
+
+/* Panels */
+.admin-panel {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.admin-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.admin-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Role badge */
+.admin-role {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.admin-role.employee {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.admin-role.manager {
+  background: #fff4e5;
+  color: #e65100;
+}
+
+/* System status */
+.admin-status ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.admin-status li {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Dark mode */
+.container.dark .admin-panel {
+  background: #171a21;
+  border: 1px solid #242833;
+}
+
+.container.dark .admin-metric {
+  background: linear-gradient(135deg, #1c2029, #1a1e27);
+}
+
+.container.dark .admin-header p {
+  color: #aaa;
+}
+
+/* =========================================================
+   FINAL UI POLISH – GLOBAL
+   ========================================================= */
+
+/* 1. Global spacing rhythm */
+.dashboard,
+.emp-layout,
+.manager-layout,
+.admin-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 2. Softer section separation */
+.section,
+.emp-panel,
+.manager-panel,
+.admin-panel {
+  transition: background 0.2s ease;
+}
+
+/* 3. Headings refinement */
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+h4 {
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+/* 4. Paragraph calmness */
+p {
+  line-height: 1.5;
+}
+
+/* =========================================================
+   CARD / PANEL DEPTH (LIGHT MODE)
+   ========================================================= */
+
+.card,
+.emp-panel,
+.manager-panel,
+.admin-panel,
+.overview-box,
+.admin-metric {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Slight hover feedback (non-animated) */
+.card:hover,
+.emp-panel:hover,
+.manager-panel:hover,
+.admin-panel:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   TABLE POLISH (ALL ROLES)
+   ========================================================= */
+
+table {
+  font-size: 14px;
+}
+
+th {
+  letter-spacing: 0.4px;
+}
+
+td {
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* =========================================================
+   INPUT & SELECT REFINEMENT
+   ========================================================= */
+
+input,
+select {
+  background: #fafafa;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
+}
+
+/* =========================================================
+   STATUS & PRIORITY MICRO-POLISH
+   ========================================================= */
+
+.status,
+.emp-status,
+.mgr-status,
+.admin-role,
+.priority,
+.emp-priority,
+.mgr-priority {
+  letter-spacing: 0.2px;
+}
+
+/* =========================================================
+   EMPTY STATES
+   ========================================================= */
+
+.empty,
+.emp-empty {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* =========================================================
+   DARK MODE POLISH (IMPORTANT)
+   ========================================================= */
+
+.container.dark {
+  background: linear-gradient(
+    180deg,
+    #0f1115 0%,
+    #141a25 100%
+  );
+}
+
+/* Dark cards feel elevated without borders */
+.container.dark .card,
+.container.dark .emp-panel,
+.container.dark .manager-panel,
+.container.dark .admin-panel,
+.container.dark .overview-box,
+.container.dark .admin-metric {
+  background: #171a21;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+
+/* Dark hover */
+.container.dark .card:hover,
+.container.dark .emp-panel:hover,
+.container.dark .manager-panel:hover,
+.container.dark .admin-panel:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75);
+}
+
+/* Dark tables */
+.container.dark tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Dark inputs */
+.container.dark input,
+.container.dark select {
+  background: #1f2430;
+  border: 1px solid #2a2f3a;
+}
+
+.container.dark input::placeholder {
+  color: #888;
+}
+
+.container.dark input:focus,
+.container.dark select:focus {
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.25);
+}
+
+/* Dark empty states */
+.container.dark .empty,
+.container.dark .emp-empty {
+  color: #aaa;
+}
+
+/* =========================================================
+   ULTRA UI POLISH – FINAL PASS
+   ========================================================= */
+
+/* -------- GLOBAL RHYTHM -------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard,
+.emp-layout,
+.manager-layout,
+.admin-layout {
+  gap: 26px;
+}
+
+/* Slightly more breathing room */
+.section,
+.emp-panel,
+.manager-panel,
+.admin-panel,
+.card {
+  padding: 22px;
+}
+
+/* -------- TYPOGRAPHY TUNING -------- */
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Section titles feel intentional */
+.section-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #666;
+}
+
+/* -------- PANELS / CARDS -------- */
+
+.card,
+.emp-panel,
+.manager-panel,
+.admin-panel,
+.overview-box,
+.admin-metric {
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+/* No jumpy hover, just confidence */
+.card:hover,
+.emp-panel:hover,
+.manager-panel:hover,
+.admin-panel:hover {
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.08);
+}
+
+/* -------- TABLE REFINEMENT -------- */
+
+table {
+  font-size: 14px;
+  border-spacing: 0;
+}
+
+th {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: #777;
+}
+
+td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* Subtle row divider */
+tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* -------- INPUT / CONTROL POLISH -------- */
+
+input,
+select {
+  height: 36px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+button {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* -------- STATUS & BADGES -------- */
+
+.status,
+.emp-status,
+.mgr-status,
+.admin-role,
+.priority,
+.emp-priority,
+.mgr-priority {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 14px;
+}
+
+/* -------- OVERVIEW / METRICS -------- */
+
+.overview-value,
+.admin-metric strong {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* -------- EMPTY STATES -------- */
+
+.empty,
+.emp-empty {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* =========================================================
+   DARK MODE – FINAL CALM PASS
+   ========================================================= */
+
+.container.dark {
+  background: radial-gradient(
+    circle at top,
+    #141a25 0%,
+    #0f1115 60%
+  );
+}
+
+/* Dark panels feel layered, not boxed */
+.container.dark .card,
+.container.dark .emp-panel,
+.container.dark .manager-panel,
+.container.dark .admin-panel,
+.container.dark .overview-box,
+.container.dark .admin-metric {
+  background: #171a21;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.75);
+}
+
+/* Dark hover stays subtle */
+.container.dark .card:hover,
+.container.dark .emp-panel:hover,
+.container.dark .manager-panel:hover,
+.container.dark .admin-panel:hover {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.85);
+}
+
+/* Dark table clarity */
+.container.dark tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.container.dark tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Dark inputs feel soft */
+.container.dark input,
+.container.dark select {
+  background: #1f2430;
+  border: 1px solid #2a2f3a;
+}
+
+/* Dark text calmness */
+.container.dark p {
+  color: #b5b5b5;
+}
+
+.container.dark .section-title {
+  color: #9aa0aa;
+}
+
+/* =========================================================
+   DARK MODE — FINAL, CALM, PREMIUM
+   ========================================================= */
+
+/* ---------- BASE BACKGROUND ---------- */
+.container.dark {
+  background: linear-gradient(
+    180deg,
+    #0e1117 0%,
+    #121826 100%
+  );
+  color: #e6e8eb;
+}
+
+/* ---------- NAVBAR ---------- */
+.container.dark .navbar {
+  background: #0f1420;
+  border-bottom: 1px solid #1f2633;
+}
+
+/* ---------- CARDS / PANELS ---------- */
+.container.dark .card,
+.container.dark .emp-panel,
+.container.dark .manager-panel,
+.container.dark .admin-panel,
+.container.dark .overview-box,
+.container.dark .admin-metric {
+  background: #141a2a;
+  border-radius: 16px;
+  border: 1px solid #1f2633;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* Hover stays subtle */
+.container.dark .card:hover,
+.container.dark .emp-panel:hover,
+.container.dark .manager-panel:hover,
+.container.dark .admin-panel:hover {
+  box-shadow:
+    0 14px 42px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* ---------- HEADINGS ---------- */
+.container.dark h2 {
+  color: #f1f3f4;
+}
+
+.container.dark h3 {
+  color: #e8eaed;
+}
+
+.container.dark h4 {
+  color: #d6dae1;
+}
+
+/* ---------- TEXT ---------- */
+.container.dark p {
+  color: #b8bcc4;
+}
+
+.container.dark .section-title {
+  color: #9aa0aa;
+  letter-spacing: 0.6px;
+}
+
+/* ---------- TABLE ---------- */
+.container.dark table {
+  background: transparent;
+}
+
+.container.dark thead th {
+  background: #101624;
+  color: #9aa0aa;
+  border-bottom: 1px solid #1f2633;
+}
+
+.container.dark tbody tr {
+  border-bottom: 1px solid #1f2633;
+}
+
+.container.dark tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* ---------- INPUTS & SELECTS ---------- */
+.container.dark input,
+.container.dark select {
+  background: #101624;
+  color: #e6e8eb;
+  border: 1px solid #1f2633;
+}
+
+.container.dark input::placeholder {
+  color: #8b9099;
+}
+
+.container.dark input:focus,
+.container.dark select:focus {
+  outline: none;
+  border-color: #8ab4f8;
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.25);
+}
+
+/* ---------- BUTTONS ---------- */
+.container.dark button {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.container.dark button:hover {
+  background: #1558b0;
+}
+
+/* ---------- STATUS BADGES ---------- */
+.container.dark .status.pending,
+.container.dark .emp-status.pending,
+.container.dark .mgr-status.pending {
+  background: #1c2230;
+  color: #b0b5bd;
+}
+
+.container.dark .status.in-progress,
+.container.dark .emp-status.inprogress,
+.container.dark .mgr-status.inprogress {
+  background: #1b2a45;
+  color: #8ab4f8;
+}
+
+.container.dark .status.done,
+.container.dark .emp-status.done,
+.container.dark .mgr-status.done {
+  background: #18392b;
+  color: #7ee2b8;
+}
+
+/* ---------- PRIORITY BADGES ---------- */
+.container.dark .priority.high,
+.container.dark .emp-priority.high,
+.container.dark .mgr-priority.high {
+  background: #3a1f24;
+  color: #ff9aa2;
+}
+
+.container.dark .priority.medium,
+.container.dark .emp-priority.medium,
+.container.dark .mgr-priority.medium {
+  background: #3a2d17;
+  color: #ffd580;
+}
+
+.container.dark .priority.low,
+.container.dark .emp-priority.low,
+.container.dark .mgr-priority.low {
+  background: #18392b;
+  color: #7ee2b8;
+}
+
+/* ---------- EMPTY STATES ---------- */
+.container.dark .empty,
+.container.dark .emp-empty {
+  color: #9aa0aa;
+}
+
+/* ---------- LOGIN PAGE ---------- */
+.container.dark .login-page {
+  background: linear-gradient(
+    180deg,
+    #0e1117 0%,
+    #121826 100%
+  );
+}
+
+.container.dark .login-card {
+  background: #141a2a;
+  border: 1px solid #1f2633;
+}
+
+.container.dark .login-accent {
+  background: linear-gradient(135deg, #1f3b73, #305aa3);
+}
+
+/* =====================================================
+   INTERACTIVITY LAYER
+   ===================================================== */
+
+/* Hoverable rows */
+.row-hover {
+  transition: background 0.15s ease;
+}
+
+.row-hover:hover {
+  background: rgba(26, 115, 232, 0.06);
+}
+
+/* Interactive panels */
+.interactive {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+}
+
+/* Focus feedback */
+input:focus,
+select:focus {
+  outline: none;
+}
+
+/* Toast feedback */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #1a73e8;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+/* Dark mode toast */
+.container.dark .toast {
+  background: #8ab4f8;
+  color: #000;
+}
+
+/* Interactive table */
+.interactive-table tbody tr {
+  cursor: pointer;
+}
+
+/* Button feel without animation */
+button {
+  transition: background 0.15s ease;
+}
+
+/* =====================================================
+   INLINE ROW ACTIONS
+   ===================================================== */
+
+.row-action {
+  position: relative;
+}
+
+/* Hide actions by default */
+.row-actions {
+  opacity: 0;
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  transition: opacity 0.15s ease;
+}
+
+/* Show on hover */
+.row-action:hover .row-actions {
+  opacity: 1;
+}
+
+/* Action buttons */
+.action-btn {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.action-btn.progress {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+/* Dark mode */
+.container.dark .action-btn.done {
+  background: #18392b;
+  color: #7ee2b8;
+}
+
+.container.dark .action-btn.progress {
+  background: #1b2a45;
+  color: #8ab4f8;
+}
+
+/* =====================================================
+   UNDO TOAST
+   ===================================================== */
+
+.undo-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1a73e8;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.undo-toast button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.undo-toast button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Dark mode */
+.container.dark .undo-toast {
+  background: #8ab4f8;
+  color: #000;
+}
+
+.container.dark .undo-toast button {
+  background: rgba(0,0,0,0.2);
+  color: #000;
+}
+
+/* =====================================================
+   KEYBOARD INTERACTION
+   ===================================================== */
+
+/* Selected row */
+.selected-row {
+  outline: 2px solid #1a73e8;
+  outline-offset: -2px;
+  background: rgba(26, 115, 232, 0.08);
+}
+
+/* Dark mode */
+.container.dark .selected-row {
+  outline: 2px solid #8ab4f8;
+  background: rgba(138, 180, 248, 0.15);
+}
+
+/* =====================================================
+   MANAGER INLINE ACTIONS
+   ===================================================== */
+
+.manager-table .row-actions {
+  opacity: 0;
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  transition: opacity 0.15s ease;
+}
+
+.manager-table .row-action:hover .row-actions {
+  opacity: 1;
+}
+
+/* Reuse action button styles */
+.action-btn {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn.done {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.action-btn.progress {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+/* Dark mode */
+.container.dark .action-btn.done {
+  background: #18392b;
+  color: #7ee2b8;
+}
+
+.container.dark .action-btn.progress {
+  background: #1b2a45;
+  color: #8ab4f8;
+}
+
+/* =====================================================
+   ADMIN LIVE REFRESH
+   ===================================================== */
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-refresh {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.refresh-dot {
+  width: 8px;
+  height: 8px;
+  background: #34a853;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.refresh-toggle {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #f1f3f4;
+  color: #333;
+}
+
+.container.dark .admin-refresh {
+  color: #aaa;
+}
+
+.container.dark .refresh-dot {
+  background: #7ee2b8;
+}
+
+.container.dark .refresh-toggle {
+  background: #1f2430;
+  color: #e6e8eb;
+}
+
+/* ===============================
+   NAVBAR – POLISHED
+   =============================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e8eb;
+  margin-bottom: 24px;
+}
+
+.navbar-left .brand {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-role {
+  font-size: 13px;
+  color: #666;
+  margin-right: 10px;
+}
+
+/* Buttons */
+.nav-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn.secondary {
+  background: #f1f3f4;
+  color: #333;
+}
+
+.nav-btn.secondary:hover {
+  background: #e0e0e0;
+}
+
+.nav-btn.danger {
+  background: #d93025;
+  color: #fff;
+}
+
+.nav-btn.danger:hover {
+  background: #b3261e;
+}
+
+/* ===============================
+   DARK MODE
+   =============================== */
+
+.container.dark .navbar {
+  background: #0f1420;
+  border-bottom: 1px solid #1f2633;
+}
+
+.container.dark .brand {
+  color: #f1f3f4;
+}
+
+.container.dark .nav-role {
+  color: #9aa0aa;
+}
+
+.container.dark .nav-btn.secondary {
+  background: #1f2430;
+  color: #e6e8eb;
+}
+
+.container.dark .nav-btn.secondary:hover {
+  background: #2a2f3a;
+}
+
+.container.dark .nav-btn.danger {
+  background: #f85149;
+  color: #000;
+}
+
+.container.dark .nav-btn.danger:hover {
+  background: #ff6b63;
+}
+
+/* ===============================
+   DASHBOARD LAYOUT – STEP 5
+   =============================== */
+
+.dashboard-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dashboard-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Panels */
+.panel {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* Filters */
+.filter-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  padding-bottom: 12px;
+}
+
+.table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Selected row */
+.row-selected {
+  background: rgba(26, 115, 232, 0.08);
+}
+
+/* Status */
+.status.pending { background: #f1f3f4; color: #555; padding: 4px 12px; border-radius: 20px; }
+.status.in-progress { background: #e8f0fe; color: #1a73e8; padding: 4px 12px; border-radius: 20px; }
+.status.done { background: #e6f4ea; color: #137333; padding: 4px 12px; border-radius: 20px; }
+
+/* Priority */
+.priority.high { background: #fdecea; color: #b71c1c; padding: 4px 12px; border-radius: 20px; }
+.priority.medium { background: #fff4e5; color: #e65100; padding: 4px 12px; border-radius: 20px; }
+.priority.low { background: #e6f4ea; color: #137333; padding: 4px 12px; border-radius: 20px; }
+
+/* Admin grid */
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.metric-card {
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.metric-card span {
+  font-size: 13px;
+  color: #666;
+}
+
+.metric-card strong {
+  font-size: 28px;
+  display: block;
+  margin-top: 6px;
+}
+
+/* Dark mode */
+.container.dark .panel,
+.container.dark .metric-card {
+  background: #161b22;
+  border: 1px solid #1f2633;
+}
+
+.container.dark .dashboard-header p {
+  color: #9aa0aa;
+}
+
+/* =========================================
+   STEP 6 — FINAL UI POLISH
+   ========================================= */
+
+/* -------- Global typography refinement -------- */
+body {
+  letter-spacing: -0.1px;
+}
+
+h2 {
+  letter-spacing: -0.4px;
+}
+
+h3 {
+  letter-spacing: -0.3px;
+}
+
+h4 {
+  letter-spacing: -0.2px;
+}
+
+/* -------- Panel depth & softness -------- */
+.panel,
+.metric-card {
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.panel:hover,
+.metric-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* -------- Table readability -------- */
+.table td {
+  font-size: 14px;
+}
+
+.table th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr:hover {
+  background: rgba(26,115,232,0.04);
+}
+
+/* -------- Status & priority consistency -------- */
+.status,
+.priority {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* -------- Input polish -------- */
+input,
+select {
+  height: 36px;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* -------- Navbar micro polish -------- */
+.navbar {
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  letter-spacing: -0.3px;
+}
+
+/* -------- Button feel -------- */
+button {
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* -------- Subtle separators -------- */
+.dashboard-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6e8eb;
+}
+
+/* =========================================
+   DARK MODE FINAL TOUCH
+   ========================================= */
+
+.container.dark {
+  background: linear-gradient(180deg, #0d1117, #121826);
+}
+
+.container.dark .panel,
+.container.dark .metric-card {
+  background: #161b22;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.75);
+}
+
+.container.dark .panel:hover,
+.container.dark .metric-card:hover {
+  box-shadow: 0 16px 40px rgba(0,0,0,0.9);
+}
+
+.container.dark .table tbody tr:hover {
+  background: rgba(138,180,248,0.08);
+}
+
+.container.dark input,
+.container.dark select {
+  background: #0f1420;
+  border: 1px solid #1f2633;
+}
+
+.container.dark .dashboard-header {
+  border-bottom: 1px solid #1f2633;
+}
+
+.container.dark .status.pending {
+  background: #1c2230;
+  color: #b0b5bd;
+}
+
+.container.dark .status.in-progress {
+  background: #1b2a45;
+  color: #8ab4f8;
+}
+
+.container.dark .status.done {
+  background: #18392b;
+  color: #7ee2b8;
+}
+
+/* =========================================
+   STEP 7 — VISUAL HIERARCHY POLISH
+   ========================================= */
+
+/* Role accent bar */
+.dashboard-header {
+  position: relative;
+  padding-left: 16px;
+}
+
+.dashboard-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 36px;
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #1a73e8, #5f9cff);
+}
+
+/* Different accents per role */
+.employee .dashboard-header::before {
+  background: linear-gradient(180deg, #1a73e8, #5f9cff);
+}
+
+.manager .dashboard-header::before {
+  background: linear-gradient(180deg, #188038, #57bb8a);
+}
+
+.admin .dashboard-header::before {
+  background: linear-gradient(180deg, #9334e6, #c58af9);
+}
+
+/* Soft section background */
+.dashboard-content {
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+/* Dark mode */
+.container.dark .dashboard-content {
+  background: #0f1420;
+}
+
+/* Panel header */
+.panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Dark */
+.container.dark .panel-title {
+  color: #9aa0aa;
+}
+
+/* Empty state card */
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px dashed #d0d7de;
+}
+
+.container.dark .empty-state {
+  background: #161b22;
+  border-color: #1f2633;
+  color: #9aa0aa;
+}
+
+.empty-state h4 {
+  margin-bottom: 6px;
+}
+
+.empty-state p {
+  font-size: 13px;
+}
+
+/* Summary row */
+.summary-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.summary-box {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.summary-box span {
+  font-size: 12px;
+  color: #666;
+}
+
+.summary-box strong {
+  font-size: 24px;
+  display: block;
+  margin-top: 6px;
+}
+
+/* Dark */
+.container.dark .summary-box {
+  background: #161b22;
+}
+
+/* ===============================
+   PANEL HEADER (STEP 7.3)
+   =============================== */
+
+.panel-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+/* Dark mode */
+.container.dark .panel-title {
+  color: #9aa0aa;
+}
+
+/* ===============================
+   PANEL FOOTER POLISH
+   =============================== */
+
+.panel::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
+  margin-top: 18px;
+}
+
+/* Dark mode */
+.container.dark .panel::after {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+}
+
+/* ===============================
+   ROLE-BASED ACCENT COLORS
+   =============================== */
+
+/* ---------- EMPLOYEE (Blue) ---------- */
+.employee .dashboard-header::before,
+.employee .panel-title::before {
+  background: linear-gradient(180deg, #1a73e8, #5f9cff);
+}
+
+/* ---------- MANAGER (Green) ---------- */
+.manager .dashboard-header::before,
+.manager .panel-title::before {
+  background: linear-gradient(180deg, #188038, #57bb8a);
+}
+
+/* ---------- ADMIN (Purple) ---------- */
+.admin .dashboard-header::before,
+.admin .panel-title::before {
+  background: linear-gradient(180deg, #9334e6, #c58af9);
+}
+
+.panel-title {
+  position: relative;
+  padding-left: 14px;
+}
+
+.panel-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ===============================
+   LOGOUT MODAL — IMPROVED UX
+   =============================== */
+
+.logout-modal {
+  max-width: 380px;
+  padding: 30px 32px;
+  border-radius: 16px;
+}
+
+/* Icon */
+.logout-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  font-size: 20px;
+  color: #5f6368;
+}
+
+.logout-modal h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.logout-modal p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Actions layout */
+.logout-modal .modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Button hierarchy */
+.logout-modal .btn-secondary {
+  flex: 1;
+}
+
+.logout-modal .btn-danger {
+  flex: 1;
+}
+
+/* ===============================
+   DARK MODE
+   =============================== */
+
+.container.dark .logout-icon {
+  background: #1f2430;
+  color: #9aa0aa;
+}
+
+.container.dark .logout-modal p {
+  color: #b8bcc4;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+}
+
+.page-header.employee::before { background: #1a73e8; }
+.page-header.manager::before { background: #188038; }
+.page-header.admin::before { background: #9334e6; }
+
+.page-header h2 {
+  margin: 0;
+}
+
+.page-header p {
+  margin-top: 6px;
+  color: #666;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.stat-card span {
+  font-size: 13px;
+  color: #666;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 26px;
+  margin-top: 6px;
+}
+
+.panel {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.panel-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.pending { background: #f1f3f4; }
+.status.progress { background: #e8f0fe; color: #1a73e8; }
+.status.done { background: #e6f4ea; color: #137333; }
+
+.priority.high { color: #b71c1c; }
+.priority.medium { color: #e65100; }
+
+.activity-list {
+  padding-left: 18px;
+  color: #555;
+}
+
+/* ============================
+   EMPLOYEE DASHBOARD UI
+   ============================ */
+
+.emp-dashboard {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+}
+
+.emp-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.emp-header p {
+  color: #666;
+  margin-top: 6px;
+}
+
+/* Filters */
+.emp-filters {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.emp-filters select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Cards */
+.emp-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* Empty state */
+.empty-task {
+  text-align: center;
+  padding: 40px;
+  border: 1px dashed #d0d7de;
+  border-radius: 10px;
+}
+
+.empty-task .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1a73e8;
+}
+
+.empty-task h4 {
+  margin-bottom: 6px;
+}
+
+.empty-task p {
+  color: #666;
+  font-size: 13px;
+}
+
+/* Activity */
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.container.dark .emp-card {
+  background: #161b22;
+  color: #e6e8eb;
+}
+
+.container.dark .empty-task {
+  border-color: #1f2633;
+}
+
+.container.dark .activity-list li {
+  border-color: #1f2633;
+}
+
+.container.dark .emp-header p {
+  color: #9aa0aa;
+}
+
+/* ============================
+   MANAGER DASHBOARD
+   ============================ */
+
+.mgr-dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.mgr-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.mgr-header p {
+  margin-top: 6px;
+  color: #666;
+}
+
+/* Stats */
+.mgr-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.mgr-stat {
+  padding: 18px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.mgr-stat span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.mgr-stat strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.mgr-stat.pending {
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+.mgr-stat.progress {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+}
+
+.mgr-stat.done {
+  background: linear-gradient(135deg, #1b5e20, #388e3c);
+}
+
+/* Cards */
+.mgr-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Table */
+.mgr-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mgr-card th,
+.mgr-card td {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/* Status & Priority */
+.status.pending { background: #f1f3f4; padding: 4px 10px; border-radius: 14px; }
+.status.progress { background: #e8f0fe; color: #1a73e8; padding: 4px 10px; border-radius: 14px; }
+.status.done { background: #e6f4ea; color: #137333; padding: 4px 10px; border-radius: 14px; }
+
+.priority.high { color: #b71c1c; }
+.priority.medium { color: #e65100; }
+.priority.low { color: #137333; }
+
+/* Activity */
+.mgr-activity {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mgr-activity li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.container.dark .mgr-card {
+  background: #161b22;
+  color: #e6e8eb;
+}
+
+.container.dark .mgr-card td,
+.container.dark .mgr-card th {
+  border-color: #1f2633;
+}
+
+.container.dark .mgr-header p {
+  color: #9aa0aa;
+}
+
+/* ============================
+   ADMIN DASHBOARD
+   ============================ */
+
+.admin-dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.admin-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.admin-header p {
+  margin-top: 6px;
+  color: #666;
+}
+
+/* Top stats */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.admin-stat {
+  padding: 18px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.admin-stat span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.admin-stat strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.admin-stat.purple {
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+}
+
+.admin-stat.violet {
+  background: linear-gradient(135deg, #5e35b1, #7e57c2);
+}
+
+.admin-stat.pink {
+  background: linear-gradient(135deg, #ad1457, #d81b60);
+}
+
+/* Cards */
+.admin-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Overview boxes */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.overview-box {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.overview-box strong {
+  font-size: 28px;
+  display: block;
+}
+
+.overview-box span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.overview-box.blue {
+  background: linear-gradient(135deg, #1a73e8, #5f9cff);
+}
+
+.overview-box.purple {
+  background: linear-gradient(135deg, #7b1fa2, #ab47bc);
+}
+
+.overview-box.red {
+  background: linear-gradient(135deg, #c62828, #e53935);
+}
+
+/* Table */
+.admin-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-card th,
+.admin-card td {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.container.dark .admin-card {
+  background: #161b22;
+  color: #e6e8eb;
+}
+
+.container.dark .admin-card th,
+.container.dark .admin-card td {
+  border-color: #1f2633;
+}
+
+.container.dark .admin-header p {
+  color: #9aa0aa;
+}
+
+/* =========================
+   NAVBAR USER MENU
+   ========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 24px;
+  top: 60px;
+  width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.dropdown-header {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-header span {
+  font-size: 12px;
+  color: #666;
+}
+
+.logout-item {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.logout-item:hover {
+  background: #f5f7fa;
+}
+
+/* =========================
+   LOGOUT MODAL (WEBSITE FEEL)
+   ========================= */
+
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.logout-box {
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  width: 360px;
+  animation: slideUp 0.25s ease;
+}
+
+.logout-box h3 {
+  margin-bottom: 8px;
+}
+
+.logout-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-ghost {
+  background: none;
+  border: none;
+  color: #555;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.user-menu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  z-index: 1000;
+}
+
+/* =========================
+   NAVBAR FINAL
+   ========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Theme button */
+.theme-btn {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Visible logout */
+.logout-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #f5f7fa;
+}
+
+/* Avatar */
+.user-menu {
+  position: relative;
+}
+
+.avatar-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  z-index: 1000;
+}
+
+.dropdown-header {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-header span {
+  font-size: 12px;
+  color: #666;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f5f7fa;
+}
+
+/* Dark mode */
+.container.dark .navbar {
+  background: #161b22;
+  border-color: #1f2633;
+}
+
+.container.dark .logout-btn {
+  background: #161b22;
+  color: #e6e8eb;
+  border-color: #1f2633;
+}
+
+/* =========================
+   UNIQUE EMPLOYEE LAYOUT
+   ========================= */
+
+.emp-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 220px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT */
+.emp-activity {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.activity-timeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.activity-timeline li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.dot.blue { background: #1a73e8; }
+.dot.green { background: #137333; }
+.dot.gray { background: #9aa0aa; }
+
+/* CENTER */
+.emp-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.focus-card {
+  background: linear-gradient(135deg, #1a73e8, #5f9cff);
+  color: white;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.focus-task {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.focus-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.primary-btn {
+  background: white;
+  color: #1a73e8;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* TASK LIST */
+.task-list {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* RIGHT */
+.emp-insights {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.insight-box {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.insight-box strong {
+  font-size: 22px;
+  display: block;
+}
+
+/* CHIPS */
+.status-chip,
+.priority-chip {
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.status-chip.pending { background: #f1f3f4; }
+.status-chip.progress { background: #e8f0fe; color: #1a73e8; }
+
+.priority-chip.high { background: #fdecea; color: #b71c1c; }
+
+.container.dark .emp-activity,
+.container.dark .emp-insights {
+  background: #0f1420;
+}
+
+.container.dark .task-list,
+.container.dark .insight-box {
+  background: #161b22;
+}
+
+.container.dark .focus-card {
+  background: linear-gradient(135deg, #0b57d0, #1a73e8);
+}
+
+/* =========================
+   UNIQUE MANAGER DASHBOARD
+   ========================= */
+
+.mgr-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT */
+.mgr-actions {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.mgr-actions h4 {
+  margin-bottom: 14px;
+}
+
+.action-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #188038;
+  color: white;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #137333;
+}
+
+/* CENTER */
+.mgr-main {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.member-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.member-card p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* RIGHT */
+.mgr-progress {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.progress-box {
+  margin-bottom: 20px;
+}
+
+.progress-box span {
+  font-size: 13px;
+  color: #666;
+}
+
+.progress-box strong {
+  display: block;
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+/* Progress bar */
+.progress-bar {
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #188038;
+  border-radius: 10px;
+}
+
+/* Status chips */
+.status-chip {
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.status-chip.pending {
+  background: #f1f3f4;
+}
+
+.status-chip.progress {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.status-chip.done {
+  background: #d7f5e8;
+  color: #0b5f3c;
+}
+
+/* DARK MODE */
+.container.dark .mgr-actions,
+.container.dark .mgr-progress {
+  background: #0f1420;
+}
+
+.container.dark .mgr-main {
+  background: #161b22;
+}
+
+.container.dark .member-card {
+  border-color: #1f2633;
+}
+
+.container.dark .progress-bar {
+  background: #1f2633;
+}
+
+.container.dark .progress-fill {
+  background: #57bb8a;
+}
+
+/* =========================
+   UNIQUE ADMIN DASHBOARD
+   ========================= */
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 240px;
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT */
+.admin-nav {
+  background: #0f172a;
+  color: #e5e7eb;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.admin-nav h4 {
+  margin-bottom: 14px;
+}
+
+.admin-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-nav li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* CENTER */
+.admin-main {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.health-card {
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+}
+
+.health-card strong {
+  font-size: 20px;
+}
+
+.health-card span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.health-card.green {
+  background: linear-gradient(135deg, #065f46, #10b981);
+}
+
+.health-card.blue {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+.health-card.purple {
+  background: linear-gradient(135deg, #581c87, #a855f7);
+}
+
+/* Activity */
+.admin-activity {
+  margin-top: 30px;
+}
+
+.activity-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-row p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.green { background: #10b981; }
+.dot.blue { background: #3b82f6; }
+.dot.red { background: #ef4444; }
+
+/* RIGHT */
+.admin-metrics {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.metric-box {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.metric-box strong {
+  font-size: 22px;
+  display: block;
+}
+
+/* DARK MODE */
+.container.dark .admin-main {
+  background: #161b22;
+}
+
+.container.dark .admin-metrics {
+  background: #0f1420;
+}
+
+.container.dark .metric-box {
+  background: #161b22;
+}
+
+.container.dark .activity-row {
+  border-color: #1f2633;
+}
+
+/* =========================
+   INTERACTIVE BEHAVIOR
+   ========================= */
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.15s ease;
+}
+
+.task-row:hover {
+  background: rgba(26,115,232,0.04);
+}
+
+.task-row.done strong {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+/* Action button appears clean */
+.task-action {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.task-action:hover {
+  background: #f5f7fa;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #1a73e8;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode */
+.container.dark .task-row:hover {
+  background: rgba(138,180,248,0.08);
+}
+
+.container.dark .task-action {
+  border-color: #1f2633;
+  color: #e6e8eb;
+}
+
+/* ===============================
+   MICRO INTERACTIONS (SAFE)
+   =============================== */
+
+/* Buttons feel clickable */
+button {
+  transition: background-color 0.15s ease,
+              transform 0.1s ease,
+              box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Focus accessibility (keyboard users) */
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(26,115,232,0.5);
+  outline-offset: 2px;
+}
+
+/* Task rows feel alive on hover (NO layout change) */
+.task-row,
+tr {
+  transition: background-color 0.12s ease;
+}
+
+.task-row:hover,
+tbody tr:hover {
+  background-color: rgba(26,115,232,0.04);
+}
+
+/* Status pills subtle animation */
+.status-done,
+.status-progress,
+.status-pending {
+  transition: transform 0.12s ease,
+              box-shadow 0.12s ease;
+}
+
+.status-done:hover,
+.status-progress:hover,
+.status-pending:hover {
+  transform: scale(1.04);
+}
+
+/* Priority pills feel tactile */
+.priority-high,
+.priority-medium,
+.priority-low {
+  transition: transform 0.12s ease;
+}
+
+.priority-high:hover,
+.priority-medium:hover,
+.priority-low:hover {
+  transform: scale(1.05);
+}
+
+/* Select dropdown interaction */
+select {
+  transition: border-color 0.15s ease,
+              box-shadow 0.15s ease;
+}
+
+select:hover {
+  border-color: #1a73e8;
+}
+
+select:focus {
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+}
+
+/* Activity timeline text subtle emphasis */
+aside p {
+  transition: color 0.15s ease;
+}
+
+aside p:hover {
+  color: #1a73e8;
+}
+
+/* Toast / feedback fade (if used) */
+.toast {
+  animation: toastFade 2s ease forwards;
+}
+
+@keyframes toastFade {
+  0%   { opacity: 0; transform: translateY(6px); }
+  15%  { opacity: 1; transform: translateY(0); }
+  85%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ===============================
+   DARK MODE INTERACTIONS
+   =============================== */
+
+.container.dark tbody tr:hover,
+.container.dark .task-row:hover {
+  background-color: rgba(138,180,248,0.08);
+}
+
+.container.dark button:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.container.dark select:hover {
+  border-color: #8ab4f8;
+}
+
+/* =====================================
+   EMPLOYEE DASHBOARD – MICRO INTERACTION
+   (NO UI CHANGE)
+   ===================================== */
+
+/* Entire employee area feels responsive */
+.emp-layout {
+  transition: background-color 0.15s ease;
+}
+
+/* Activity items (Today section) */
+.emp-layout aside p {
+  cursor: default;
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.emp-layout aside p:hover {
+  color: #1a73e8;
+  transform: translateX(2px);
+}
+
+/* Focus card button interaction */
+.emp-layout main button {
+  transition: background-color 0.15s ease,
+              transform 0.1s ease,
+              box-shadow 0.15s ease;
+}
+
+.emp-layout main button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.emp-layout main button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Task rows (My Tasks list) */
+.emp-layout main > div > div {
+  transition: background-color 0.12s ease;
+}
+
+.emp-layout main > div > div:hover {
+  background-color: rgba(26,115,232,0.04);
+}
+
+/* Status chips interaction */
+.emp-layout .status-chip,
+.emp-layout .priority-chip {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.emp-layout .status-chip:hover,
+.emp-layout .priority-chip:hover {
+  transform: scale(1.05);
+}
+
+/* Insights cards (right panel) */
+.emp-layout aside:last-child > div {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.emp-layout aside:last-child > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Keyboard accessibility */
+.emp-layout button:focus-visible {
+  outline: 2px solid rgba(26,115,232,0.5);
+  outline-offset: 2px;
+}
+
+/* ===============================
+   DARK MODE (EMP DASHBOARD ONLY)
+   =============================== */
+
+.container.dark .emp-layout aside p:hover {
+  color: #8ab4f8;
+}
+
+.container.dark .emp-layout main > div > div:hover {
+  background-color: rgba(138,180,248,0.08);
+}
+
+.container.dark .emp-layout aside:last-child > div:hover {
+  box-shadow: 0 10px 22px rgba(0,0,0,0.4);
+}
+
+/* ==================================================
+   EMPLOYEE DASHBOARD – BEAUTIFUL & INTERACTIVE
+   (Same structure, enhanced look)
+   ================================================== */
+
+/* ---------- Layout ---------- */
+.emp-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 240px;
+  gap: 32px;
+  max-width: 1250px;
+  margin: 48px auto;
+  padding: 0 12px;
+}
+
+/* ---------- LEFT : Activity ---------- */
+.emp-layout aside:first-child {
+  background: linear-gradient(180deg, #f9fbff, #f1f5ff);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.emp-layout aside:first-child h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.emp-layout aside:first-child p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 14px;
+}
+
+.emp-layout aside:first-child p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a73e8;
+}
+
+/* Hover = interactive feel */
+.emp-layout aside:first-child p:hover {
+  transform: translateX(4px);
+  transition: 0.2s ease;
+}
+
+/* ---------- CENTER : Focus ---------- */
+.emp-layout main {
+  background: linear-gradient(
+    135deg,
+    #1a73e8,
+    #4f8df5
+  );
+  color: white;
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(26,115,232,0.25);
+}
+
+.emp-layout main h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.emp-layout main h4 {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+/* Focus button */
+.emp-layout main button {
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: none;
+  background: white;
+  color: #1a73e8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.emp-layout main button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+}
+
+/* ---------- TASK LIST ---------- */
+.emp-layout main > div {
+  margin-top: 22px;
+}
+
+.emp-layout main > div > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  font-size: 14px;
+}
+
+.emp-layout main > div > div:hover {
+  background: rgba(255,255,255,0.08);
+  padding-left: 8px;
+  transition: 0.2s ease;
+}
+
+/* ---------- RIGHT : Insights ---------- */
+.emp-layout aside:last-child {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.emp-layout aside:last-child h4 {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+.emp-layout aside:last-child p {
+  font-size: 15px;
+  margin-bottom: 18px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f5f8ff;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.emp-layout aside:last-child p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(26,115,232,0.15);
+}
+
+/* ==================================================
+   DARK MODE – STILL BEAUTIFUL
+   ================================================== */
+
+.container.dark .emp-layout aside:first-child {
+  background: linear-gradient(180deg, #0f172a, #111827);
+}
+
+.container.dark .emp-layout main {
+  background: linear-gradient(135deg, #0b57d0, #1a73e8);
+}
+
+.container.dark .emp-layout aside:last-child {
+  background: #0f1420;
+}
+
+.container.dark .emp-layout aside:last-child p {
+  background: #161b22;
+}
+
+.container.dark .emp-layout main > div > div {
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* ===============================
+   RESPONSIVE EMP DASHBOARD
+   =============================== */
+
+@media (max-width: 1024px) {
+  .emp-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .emp-layout aside:first-child,
+  .emp-layout aside:last-child {
+    order: 2;
+  }
+
+  .emp-layout main {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .emp-layout {
+    margin: 24px auto;
+  }
+
+  .emp-layout main {
+    padding: 24px;
+  }
+
+  .emp-layout aside {
+    padding: 20px;
+  }
+}
+
+/* ===============================
+   LOADING SHIMMER (SAFE)
+   =============================== */
+
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Dark mode shimmer */
+.container.dark .loading::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.12),
+    transparent
+  );
+}
+
+/* ===============================
+   FOCUS COMPLETION FEEDBACK
+   =============================== */
+
+.emp-layout main button:active {
+  animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Completed task animation */
+.emp-layout main > div > div {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.emp-layout main > div > div.completed {
+  opacity: 0.6;
+  transform: translateX(6px);
+}
+
+/* ===============================
+   MANAGER DASHBOARD – INTERACTIVE
+   =============================== */
+
+.mgr-task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.12s ease;
+}
+
+.mgr-task-row:hover {
+  background: rgba(24,128,56,0.05);
+}
+
+/* Select interaction */
+.mgr-task-row select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: box-shadow 0.15s ease;
+}
+
+.mgr-task-row select:focus {
+  box-shadow: 0 0 0 2px rgba(24,128,56,0.25);
+}
+
+/* Progress bar animation */
+.progress-fill {
+  transition: width 0.4s ease;
+}
+
+/* Activity hover */
+.mgr-progress p {
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.mgr-progress p:hover {
+  color: #188038;
+  transform: translateX(4px);
+}
+
+/* Buttons */
+.mgr-actions button {
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.mgr-actions button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* Dark mode */
+.container.dark .mgr-task-row:hover {
+  background: rgba(87,187,138,0.08);
+}
+.container.dark .mgr-actions button:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+/* ===============================
+   MANAGER DASHBOARD INTERACTION
+   =============================== */
+
+/* Row hover */
+.mgr-task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.mgr-task-row:hover {
+  background: rgba(24,128,56,0.05);
+  transform: translateX(4px);
+}
+
+/* Status select focus */
+.mgr-task-row select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: box-shadow 0.15s ease;
+}
+
+.mgr-task-row select:focus {
+  box-shadow: 0 0 0 3px rgba(24,128,56,0.25);
+}
+
+/* Flash when updated */
+.mgr-task-row.flash {
+  background: rgba(24,128,56,0.12);
+}
+
+/* Progress animation */
+.progress-fill {
+  transition: width 0.5s ease;
+}
+
+/* Activity hover */
+.mgr-progress p {
+  font-size: 14px;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.mgr-progress p:hover {
+  transform: translateX(6px);
+  color: #188038;
+}
+
+/* Buttons */
+.mgr-actions button {
+  transition: transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+.mgr-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Dark mode */
+.container.dark .mgr-task-row:hover {
+  background: rgba(87,187,138,0.08);
+}
+
+/* ===============================
+   MANAGER ACTION FEEDBACK
+   =============================== */
+
+.mgr-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.mgr-btn:hover {
+  background: #f5f8ff;
+  transform: translateX(3px);
+}
+
+.mgr-btn:active {
+  transform: scale(0.97);
+}
+
+.mgr-btn.secondary {
+  background: #f9fafb;
+}
+
+.mgr-action-feedback {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #1a73e8;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode */
+.container.dark .mgr-btn {
+  background: #161b22;
+  border-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.container.dark .mgr-btn:hover {
+  background: #1f2633;
+}
+
+
+/* ===============================
+   ADMIN DASHBOARD – INTERACTIVE
+   =============================== */
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 240px;
+  gap: 32px;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+/* ---------- SIDEBAR ---------- */
+.admin-sidebar {
+  background: linear-gradient(180deg, #0b1220, #0f172a);
+  padding: 26px;
+  border-radius: 20px;
+}
+
+.admin-sidebar h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.admin-menu {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: #cbd5f5;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.admin-menu:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(4px);
+}
+
+.admin-menu.active {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
+/* ---------- METRICS ---------- */
+.admin-metrics {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  flex: 1;
+  padding: 22px;
+  border-radius: 18px;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+}
+
+.metric-card.green {
+  background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.metric-card.blue {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.metric-card.purple {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+}
+
+/* ---------- ACTIVITY ---------- */
+.activity-list {
+  margin-top: 16px;
+}
+
+.activity-item {
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+
+.activity-item:hover {
+  transform: translateX(6px);
+}
+
+.activity-item.success {
+  background: rgba(16,185,129,0.1);
+}
+
+.activity-item.info {
+  background: rgba(59,130,246,0.1);
+}
+
+.activity-item.warning {
+  background: rgba(239,68,68,0.1);
+}
+
+/* ---------- QUICK STATS ---------- */
+.admin-stats {
+  background: #f8fafc;
+  padding: 26px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.quick-stat {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quick-stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ---------- DARK MODE ---------- */
+.container.dark .admin-stats {
+  background: #0f1420;
+}
+
+.container.dark .quick-stat {
+  background: #161b22;
+}
+
+.container.dark .activity-item.success {
+  background: rgba(16,185,129,0.2);
+}
+
+.container.dark .activity-item.info {
+  background: rgba(59,130,246,0.2);
+}
+
+.container.dark .activity-item.warning {
+  background: rgba(239,68,68,0.2);
+}
+
+/* ===============================
+   ADMIN INTERACTIVE FEATURES
+   =============================== */
+
+.permission-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.permission-toggle input {
+  transform: scale(1.2);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  width: 340px;
+  animation: scaleIn 0.2s ease;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.modal-buttons .danger {
+  background: #dc2626;
+  color: white;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Dark mode */
+.container.dark .permission-toggle {
+  background: #161b22;
+}
+
+.container.dark .modal-content {
+  background: #0f1420;
+}
+
+/* ===============================
+   ADMIN USER MANAGEMENT POLISH
+   =============================== */
+
+/* Center action buttons */
+.action-cell {
+  text-align: center;
+}
+
+/* Table tweaks */
+.admin-main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-main th,
+.admin-main td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Buttons */
+.admin-main table button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.admin-main table button:hover {
+  background: #f5f8ff;
+}
+
+/* Status pills */
+.status-done {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #e6f4ea;
+  color: #137333;
+  font-size: 12px;
+}
+
+.status-pending {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #f1f3f4;
+  color: #5f6368;
+  font-size: 12px;
+}
+
+/* Dark mode */
+.container.dark .admin-main table td {
+  border-color: #333;
+}
+
+.container.dark .admin-main table button {
+  background: #161b22;
+  color: #e0e0e0;
+  border-color: #333;
+}
+
+/* Center alignment (Role, Status, Action) */
+.center-cell {
+  text-align: center;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+/* Status pills */
+.status-done {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #e6f4ea;
+  color: #137333;
+  font-size: 12px;
+}
+
+.status-pending {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #f1f3f4;
+  color: #5f6368;
+  font-size: 12px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Permissions */
+.permission-card {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.permission-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* Dark mode */
+.container.dark .permission-card {
+  background: #161b22;
+  border-color: #333;
+}
+
+/* ---------- LOG TOOLBAR ---------- */
+.log-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.log-toolbar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* ---------- LOG TABLE ---------- */
+.log-table-wrapper {
+  max-height: 340px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.log-table-wrapper thead {
+  position: sticky;
+  top: 0;
+  background: #f7f9fc;
+  z-index: 1;
+}
+
+/* ---------- LOG BADGES ---------- */
+.log-info {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.log-action {
+  background: #e6f4ea;
+  color: #137333;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.log-warning {
+  background: #fff4e5;
+  color: #e65100;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Danger button */
+button.danger {
+  background: #dc2626;
+  color: white;
+}
+
+.flash {
+  animation: flashRow 0.6s ease;
+}
+
+@keyframes flashRow {
+  from {
+    background: #e8f0fe;
+  }
+  to {
+    background: transparent;
+  }
+}
