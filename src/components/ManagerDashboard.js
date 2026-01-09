@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 export default function ManagerDashboard() {
+  const [activeAction, setActiveAction] = useState(null);
+
   const [tasks, setTasks] = useState([
     { id: 1, employee: "Alice", task: "Prepare presentation", status: "In Progress" },
     { id: 2, employee: "Bob", task: "Review reports", status: "Pending" },
@@ -13,91 +15,63 @@ export default function ManagerDashboard() {
     "Emma completed Team meeting"
   ]);
 
-  const [actionMessage, setActionMessage] = useState("");
-
   const updateStatus = (id, newStatus) => {
+    const t = tasks.find(x => x.id === id);
+
     setTasks(prev =>
-      prev.map(t =>
-        t.id === id ? { ...t, status: newStatus, flash: true } : t
+      prev.map(task =>
+        task.id === id ? { ...task, status: newStatus } : task
       )
     );
 
-    const task = tasks.find(t => t.id === id);
     setActivity(prev => [
-      `${task.employee} marked "${task.task}" as ${newStatus}`,
+      `${t.employee} updated "${t.task}" → ${newStatus}`,
       ...prev
     ]);
-
-    setTimeout(() => {
-      setTasks(prev =>
-        prev.map(t =>
-          t.id === id ? { ...t, flash: false } : t
-        )
-      );
-    }, 600);
   };
 
   const completed = tasks.filter(t => t.status === "Done").length;
   const progress = Math.round((completed / tasks.length) * 100);
 
-  /* ------------------
-     MANAGER ACTIONS
-     ------------------ */
-  const handleAction = (msg) => {
-    setActionMessage(msg);
-    setTimeout(() => setActionMessage(""), 2000);
-  };
-
   return (
     <div className="mgr-layout">
-      {/* LEFT */}
+      {/* LEFT PANEL */}
       <aside className="mgr-actions">
-        <h4>Manager Actions</h4>
+        <h4>Manager Controls</h4>
 
-        <button
-          className="mgr-btn"
-          onClick={() => handleAction("Assign Task panel will open")}
-        >
-          Assign Task
-        </button>
-
-        <button
-          className="mgr-btn"
-          onClick={() => handleAction("Loading team overview")}
-        >
-          View Team
-        </button>
-
-        <button
-          className="mgr-btn secondary"
-          onClick={() => handleAction("Weekly report generated")}
-        >
-          Weekly Report
-        </button>
-
-        {/* Inline feedback (very important) */}
-        {actionMessage && (
-          <p className="mgr-action-feedback">{actionMessage}</p>
-        )}
+        {[
+          { key: "assign", label: "Assign Task", desc: "Allocate new work", icon: "📋" },
+          { key: "team", label: "View Team", desc: "Members & roles", icon: "👥" },
+          { key: "report", label: "Weekly Report", desc: "Performance summary", icon: "📊" }
+        ].map(action => (
+          <div
+            key={action.key}
+            className={`mgr-command ${activeAction === action.key ? "active" : ""}`}
+            onClick={() => setActiveAction(action.key)}
+          >
+            <span className="icon">{action.icon}</span>
+            <div>
+              <strong>{action.label}</strong>
+              <p>{action.desc}</p>
+            </div>
+          </div>
+        ))}
       </aside>
 
       {/* CENTER */}
       <main className="mgr-main">
         <h3>Team Tasks</h3>
 
-        {tasks.map(t => (
-          <div
-            key={t.id}
-            className={`mgr-task-row ${t.flash ? "flash" : ""}`}
-          >
+        {tasks.map(task => (
+          <div key={task.id} className="mgr-task-row">
             <div>
-              <strong>{t.employee}</strong>
-              <p>{t.task}</p>
+              <strong>{task.employee}</strong>
+              <p>{task.task}</p>
             </div>
 
             <select
-              value={t.status}
-              onChange={(e) => updateStatus(t.id, e.target.value)}
+              value={task.status}
+              onChange={(e) => updateStatus(task.id, e.target.value)}
             >
               <option>Pending</option>
               <option>In Progress</option>
@@ -112,10 +86,7 @@ export default function ManagerDashboard() {
         <h4>Team Progress</h4>
 
         <div className="progress-bar">
-          <div
-            className="progress-fill"
-            style={{ width: `${progress}%` }}
-          />
+          <div className="progress-fill" style={{ width: `${progress}%` }} />
         </div>
 
         <p>{progress}% Completed</p>

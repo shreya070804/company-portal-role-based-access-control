@@ -4417,15 +4417,72 @@ button.danger {
   color: white;
 }
 
-.flash {
-  animation: flashRow 0.6s ease;
+/* ---------- MANAGER COMMAND PANEL ---------- */
+
+.mgr-actions {
+  background: #f9fafb;
+  padding: 22px;
+  border-radius: 18px;
 }
 
-@keyframes flashRow {
-  from {
-    background: #e8f0fe;
-  }
-  to {
-    background: transparent;
-  }
+.mgr-actions h4 {
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mgr-command {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 12px;
+}
+
+.mgr-command .icon {
+  font-size: 20px;
+}
+
+.mgr-command strong {
+  font-size: 14px;
+}
+
+.mgr-command p {
+  font-size: 12px;
+  margin: 2px 0 0;
+  color: #6b7280;
+}
+
+.mgr-command:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.mgr-command.active {
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+}
+
+.mgr-command.active p {
+  color: #dbeafe;
+}
+
+/* Dark mode */
+.container.dark .mgr-actions {
+  background: #111827;
+}
+
+.container.dark .mgr-command {
+  background: #1f2937;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+.container.dark .mgr-command.active {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
 }
