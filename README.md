@@ -70,23 +70,22 @@ npm start
 ```
 ##  Screenshots
 
-### 🧑‍💻Employee Dashboard
+### Employee Dashboard
 Personal task dashboard for employees with focus-based task view, daily activity feed, task insights, and interactive status updates.
 
 ![Employee Dashboard](screenshots/employee.png)
 ---
 
-### 👨‍💼 Manager Dashboard
+###  Manager Dashboard
 Team management dashboard allowing managers to track team tasks, update task status, monitor progress, and view recent team activity.
 
 ![Manager Dashboard](screenshots/manager.png)
 
 ---
 
-### 🛡️ Admin Dashboard
+###  Admin Dashboard
 Administrative control panel for managing users, assigning roles, viewing permissions, and monitoring system activity logs.
 
 ![Admin Dashboard](screenshots/admin.png)
 
-(Add screenshots of Employee, Manager, and Admin dashboards here for better visibility.)
 
