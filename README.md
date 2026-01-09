@@ -73,7 +73,7 @@ npm start
 ### 🧑‍💻Employee Dashboard
 Personal task dashboard for employees with focus-based task view, daily activity feed, task insights, and interactive status updates.
 
-![Employee Dashboard] "C:\Users\Shreya\OneDrive\Pictures\employee.png"
+![Employee Dashboard](screenshots/employee.png)
 ---
 
 ### 👨‍💼 Manager Dashboard
